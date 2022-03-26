@@ -1,5 +1,7 @@
 <template>
-  <input v-focus="{ firstFocus: true, color: 'green' }" type="text" />
+  <div class="p-20">
+    <input v-focus="{ firstFocus: true, color: 'green' }" type="text" />
+  </div>
 </template>
 
 <script setup lang="ts">
