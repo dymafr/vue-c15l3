@@ -10,7 +10,10 @@ const vFocus: Directive<
   { firstFocus: boolean; color: string }
 > = {
   mounted(el, binding) {
-    el.focus();
+    if (firstFocus) {
+      el.style.outlineColor = color;
+      el.focus();
+    }
   },
 };
 </script>
